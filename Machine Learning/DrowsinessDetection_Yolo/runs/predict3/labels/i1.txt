@@ -1,5 +1,0 @@
-0.22 web_site
-0.12 jigsaw_puzzle
-0.10 envelope
-0.05 monitor
-0.05 screen

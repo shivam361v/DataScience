@@ -1,0 +1,13 @@
+names:
+- awake
+- drowsy
+nc: 2
+roboflow:
+  license: CC BY 4.0
+  project: drowsinessdetection_yolo
+  url: https://universe.roboflow.com/drowsinessdetectionyolo/drowsinessdetection_yolo/dataset/4
+  version: 4
+  workspace: drowsinessdetectionyolo
+test: /content/DrowsinessDetection_yolo-4/test/images
+train: /content/DrowsinessDetection_yolo-4/train/images
+val: /content/DrowsinessDetection_yolo-4/valid/images

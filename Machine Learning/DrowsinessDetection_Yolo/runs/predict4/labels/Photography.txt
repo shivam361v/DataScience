@@ -1,5 +1,0 @@
-0.44 bow_tie
-0.34 lab_coat
-0.11 suit
-0.03 Windsor_tie
-0.01 sunglasses
