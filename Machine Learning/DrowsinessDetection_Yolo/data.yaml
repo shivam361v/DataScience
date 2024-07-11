@@ -1,0 +1,13 @@
+<<<<<<< HEAD
+train: C:\Users\SHIVAM VISHWAKARMA\DataScience\Machine Learning\DrowsinessDetection_Yolo\data\train\images
+val: C:\Users\SHIVAM VISHWAKARMA\DataScience\Machine Learning\DrowsinessDetection_Yolo\data\valid\images
+test: C:\Users\SHIVAM VISHWAKARMA\DataScience\Machine Learning\DrowsinessDetection_Yolo\data\test\images
+=======
+train: ../data/train/images
+val: ../data/valid/images
+test: ../data/test/images
+>>>>>>> 51a7c7af9bad2aa0b7a33c33df052c62d18a81b5
+
+nc: 2
+names: ['awake', 'drowsy']
+
