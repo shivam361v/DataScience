@@ -9,7 +9,15 @@ model = YOLO("best.pt")
 bounding_box_annotator = sv.BoundingBoxAnnotator()
 label_annotator = sv.LabelAnnotator()
 
+
+
 cap = cv2.VideoCapture(0)
+
+#video caputre initilization
+
+fourcc = cv2.VideoWriter_fourcc(*'mp4v')
+out = cv2.VideoWriter('output_video.mp4', fourcc, cap.get(cv2.CAP_PROP_FPS), (int(cap.get(cv2.CAP_PROP_FRAME_WIDTH)), int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))))
+
 
 if not cap.isOpened():
     print("Cannot open camera")
@@ -28,6 +36,9 @@ while True:
     annotated_image = label_annotator.annotate(scene=annotated_image, detections=detections)   
     
     cv2.imshow('frame', annotated_image)
+    
+    # write given frame in the file
+    out.write(annotated_image)
     
     k = cv2.waitKey(1)
     
