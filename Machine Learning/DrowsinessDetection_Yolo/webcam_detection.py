@@ -24,10 +24,8 @@ while True:
     results = model(frame)[0]
     detections = sv.Detections.from_ultralytics(results)
     
-    annotated_image = bounding_box_annotator.annotate(
-    scene=frame, detections=detections)
-    annotated_image = label_annotator.annotate(
-    scene=annotated_image, detections=detections)   
+    annotated_image = bounding_box_annotator.annotate(scene=frame, detections=detections)
+    annotated_image = label_annotator.annotate(scene=annotated_image, detections=detections)   
     
     cv2.imshow('frame', annotated_image)
     
